@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <title>Your Details</title>
+       <link rel="stylesheet" href="Detail.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.min.css">
+       
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    </head>
+<body>
+<section class="sub-header-ticket">
+<nav>
+    <div class="logo-container">
+        <img src="images/logo.jpg" alt="#">
+         </div>   
+          <div class="nav-links" id="navLinks">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Ticket.html">BOOK TICKETS</a></li>
+            <li><a href="Detail.html">DETAILS</a></li>
+            <li><a href="Payment.html">PAYMENT</a></li>
+            <li><a href="Confirmation.html">CONFIRMATION</a>
+        </ul>
+    </div>
+</nav>
+<h1>YOUR DETAILS</h1>
+
+</section>
+
+<!-- Enter your details section -->
+<div class="details-container">
+    <div class="form-box">
+    <h2>Enter your details</h2>
+    <form id="userDetailsForm">
+      <div class="form-group">
+        <label for="fullName">Full Name<span class="required">*</span></label>
+
+        <input type="text" id="fullName" required>
+      </div>
+
+
+
+
+      <div class="form-group">
+        <label for="phone">Mobile Phone</label>
+        <input type="tel" id="phone" name="phone" required >
+    </div>
+
+
+      <div class="form-group">
+        <label for="email">Email<span class="required">*</span></label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmEmail">Confirm Email<span class="required">*</span></label>
+        <input type="email" id="confirmEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      </form>
+
+    <div class="button">
+      <a href="Payment.html">
+      <button type="submit" id="confirmPurchaseBtn" disabled >Continue with Purchase</button>
+    </div>
+    
+    
+    </div>
+  </div>
+<script src="details.js"></script>
+<script src="purchase_confirmation.js"></script>
+<script src="purchase_card_details.js"></script>
+
+<br>
+<br>
+
+<!--Footer final-->
+<fieldset>
+  <footer id="footer"><div>
+      <p>Copyright &copy;2023 Thanks for wikipedia,W3Schools<br>by Sasmitha Fernando</p>
+    
+    </div></footer>
+  </fieldset>
+
+
+
+
+</body>
+</html>

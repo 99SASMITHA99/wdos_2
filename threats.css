@@ -1,0 +1,194 @@
+body{
+    background-color: black;
+}
+/*body decoration*/
+.header{
+      width: 100%;
+      height: 15%;
+      position: fixed;
+      background: rgb(15, 19, 83);
+      padding: 0 0;
+      color: rgb(0, 0, 0);
+      top: 0;
+      font-size: 8px;
+      display: inline-block;
+  /*header decoration*/
+  }
+  .container{
+      width: 100%;
+      margin: 5px;/* center the div horizontally */
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+  }/*nav bar styles*/
+  .logo{
+      display: inline-block;
+      vertical-align: bottom;
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+      margin-top: 15px;
+      padding-left: 10px;
+  }/*logo image styles*/
+  .topnav{
+      position: sticky;
+  }
+  
+  nav a{/*nav bar styles*/
+      
+      color: rgb(120, 234, 181);
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 100px;
+      height: 70px;
+      line-height: 80px;
+      font-family: cursive;
+      font-size: 20px;
+      text-align: center;
+  
+  }
+  
+  .topnavText{/*nav bar text styles*/
+      position: absolute;
+      top: 1200px;
+  }
+  .topnav a:hover{/*nav bar hover styles*/
+          background-color: rgb(235, 234, 232);
+          color: rgb(62, 107, 254);
+  }
+  .topnav a.active{
+      background-color: cadetblue;
+      color: black;
+  }
+  .topnav input[type=text]{/*Search bar styles*/
+      float: right;
+      padding: 6px 6px;
+      margin-top: 30px;
+      margin-right: 16px;
+      border: none;
+      font-size: 17px;
+  }
+  
+  @media only screen and(min-width:700px){/*responsive media querry*/
+      .topnav a{
+          background-position: 25px center;
+          display: block;
+      }
+      .topnav ul{
+          justify-content: flex-end;
+      }
+      .topnav li{
+          width: 50px;
+          flex-grow: 0;
+      }
+      .navText{
+          display: inline;
+          text-align: center;
+          padding-left: 25px;
+          padding-top: 0%;
+      }
+      .container{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-gap:10px;
+      }
+    
+  
+  }
+  #h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-top: 50px;
+    color: beige;
+}
+#field3{
+    background-color: rgba(226, 226, 226, 0.945);
+    padding: 1em;
+    margin: 1em;
+}
+#con{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#con .c{/* cintent dividing boxes */
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgb(146, 229, 249), 0 15px 12px  rgb(0, 184, 230);
+    background-color: rgb(248, 247, 245);
+}
+#con h3, #con p{/* box paragraphs and heading styles */
+    width: 90%;
+    padding: 10px;
+    margin: 0em auto;
+    text-align: justify;
+}
+.button{/* box button */
+    padding: .8em;
+    background-color: rgb(17, 1, 1);
+    color: rgb(201, 14, 107);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+#con img{/* box inside image */
+    max-width: 470px;
+    display: block;
+}
+
+#ul{
+    text-align: justify;
+    margin-left: 30px;
+}
+#sub4{
+    width: 450px;
+    height: 250px;
+}
+
+#sub5{
+    width: 450px;
+    height: 250px;
+}
+#sub6{
+    width: 450px;
+    height: 250px;
+}
+#head{
+    font-size: 30px;
+}
+.li{/* extra links*/
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.li:hover{
+    background-color: aquamarine;
+}
+#h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(245, 108, 92);
+    text-align: center;
+}
+#h3{
+    font-size: 25px;
+}
+#footer{/*footer styles*/
+    width: 100%;
+    position: unset;
+    background: black;
+    padding: 10px 0;
+    color: rgb(252, 248, 248);
+    bottom: 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+

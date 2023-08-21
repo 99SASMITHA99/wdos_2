@@ -1,0 +1,197 @@
+ body{
+      background-color: rgb(177, 237, 217);
+ }
+ /*body decoration*/
+.header{
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    background: rgb(15, 19, 83);
+    padding: 0 0;
+    color: rgb(0, 0, 0);
+    top: 0;
+    font-size: 8px;
+    display: inline-block;
+/*header decoration*/
+}
+.container{
+    width: 100%;
+    margin: 5px;/* center the div horizontally */
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+}/*nav bar styles*/
+.logo{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 60px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 15px;
+    padding-left: 10px;
+}/*logo image styles*/
+.topnav{
+    position: sticky;
+}
+
+nav a{/*nav bar styles*/
+    
+    color: rgb(120, 234, 181);
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 100px;
+    height: 70px;
+    line-height: 80px;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.topnavText{/*nav bar text styles*/
+    position: absolute;
+    top: 1200px;
+}
+.topnav a:hover{/*nav bar hover styles*/
+        background-color: rgb(235, 234, 232);
+        color: rgb(62, 107, 254);
+}
+.topnav a.active{
+    background-color: cadetblue;
+    color: black;
+}
+.topnav input[type=text]{/*Search bar styles*/
+    float: right;
+    padding: 6px 6px;
+    margin-top: 30px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+}
+
+@media only screen and(min-width:700px){/*responsive media querry*/
+    .topnav a{
+        background-position: 25px center;
+        display: block;
+    }
+    .topnav ul{
+        justify-content: flex-end;
+    }
+    .topnav li{
+        width: 50px;
+        flex-grow: 0;
+    }
+    .navText{
+        display: inline;
+        text-align: center;
+        padding-left: 25px;
+        padding-top: 0%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap:10px;
+    }
+  
+
+}
+
+* {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    #h2{
+    text-align: center;
+    font-family: cursive;
+    padding-top: 100px;
+    font-size: 50px;
+    color: rgb(6, 94, 107);
+    }
+    
+    #para{
+      text-align: justify;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 20px;
+      margin-top: 20px;
+
+    }
+    .mapouter{
+      position:relative;
+      text-align:right;
+      width:100%;
+      height:400px;
+    }
+      .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        width:100%;
+        height:400px;
+      }
+      .gmap_iframe {
+        height:400px!important;
+      }
+    
+      #sec{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+      }
+    
+      #h3{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        color: rgb(238, 72, 1);
+      }
+      #h4{
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: rgb(17, 5, 144);
+      }
+      
+      .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #0fee1e;
+        border: 1px solid #0e0c0c;
+        padding:12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        box-align: center;
+    }
+    .hero-btn:hover{
+    border: 1px solid #36ebf4;
+    background-color: #0d1dca;
+    transition: 1s;
+    }
+    #footer{/*footer styles*/
+      width: 100%;
+      position: unset;
+      background: black;
+      padding: 10px 0;
+      color: rgb(252, 248, 248);
+      bottom: 0;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+  
+  }  
